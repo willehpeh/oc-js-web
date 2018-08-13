@@ -9,6 +9,7 @@ const createPostRouter = require('./routes/create-post');
 const createPostWithUidRouter = require('./routes/create-post-with-uid');
 const generateLoremRouter = require('./routes/generate-lorem');
 const generateUidRouter = require('./routes/generate-uid');
+const generateTitleRouter = require('./routes/generate-title');
 
 const app = express();
 
@@ -31,5 +32,6 @@ app.use('/create-post', createPostRouter);
 app.use('/create-post-with-uid', createPostWithUidRouter);
 app.use('/generate-lorem', generateLoremRouter);
 app.use('/generate-uid', generateUidRouter);
+app.use('/generate-title', generateTitleRouter);
 
 module.exports = app;
