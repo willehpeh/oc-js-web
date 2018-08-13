@@ -6,6 +6,9 @@ const logger = require('morgan');
 const createHashRouter = require('./routes/create-hash');
 const checkHashRouter = require('./routes/check-hash');
 const createPostRouter = require('./routes/create-post');
+const createPostWithUidRouter = require('./routes/create-post-with-uid');
+const generateLoremRouter = require('./routes/generate-lorem');
+const generateUidRouter = require('./routes/generate-uid');
 
 const app = express();
 
@@ -25,5 +28,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/create-hash', createHashRouter);
 app.use('/check-hash', checkHashRouter);
 app.use('/create-post', createPostRouter);
+app.use('/create-post-with-uid', createPostWithUidRouter);
+app.use('/generate-lorem', generateLoremRouter);
+app.use('/generate-uid', generateUidRouter);
 
 module.exports = app;
