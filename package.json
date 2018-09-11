@@ -21,8 +21,10 @@
     "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
+    "gulp-jshint": "^2.1.0",
     "gulp-merge": "^0.1.1",
     "gulp-uglify": "^3.0.1",
+    "jshint": "^2.9.6",
     "run-sequence": "^2.2.1"
   }
 }
